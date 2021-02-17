@@ -9,6 +9,7 @@
         android:roundIcon="@drawable/ic_baseline_alarm_24"
         android:supportsRtl="true"
         android:theme="@style/Theme.AssignmentOne">
+        <activity android:name=".AboutAppActivity"></activity>
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,7 +17,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

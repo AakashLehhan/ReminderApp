@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Assignment One</string>
+    <string name="app_name">Reminder App</string>
+    <string name="about_app">This app is made by me as a task for academic evaluation. This app comprises of features like setting up reminder, repeating it, setting custom tune and dark &amp; light mode support.</string>
 </resources>

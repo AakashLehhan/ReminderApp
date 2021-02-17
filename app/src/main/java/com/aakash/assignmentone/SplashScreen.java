@@ -64,13 +64,13 @@ public class SplashScreen extends AppCompatActivity {
                         @Override
                         public void run() {
                             pBar.setProgress(progress);
-                            if (progress == 30){
+                            if (progress == 20){
                                 name.setText("Aakash");
                             }
-                            if (progress == 40){
+                            if (progress == 30){
                                 rNo.setText("11804088");
                             }
-                            if (progress == 45){
+                            if (progress == 40){
                                 tag.setText("(Assignment One)");
                             }
                         }
