@@ -67,8 +67,10 @@ public class SplashScreen extends AppCompatActivity {
                             if (progress == 30){
                                 name.setText("Aakash");
                             }
-                            if (progress == 45){
+                            if (progress == 40){
                                 rNo.setText("11804088");
+                            }
+                            if (progress == 45){
                                 tag.setText("(Assignment One)");
                             }
                         }

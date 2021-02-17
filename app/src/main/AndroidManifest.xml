@@ -5,7 +5,7 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_baseline_alarm_24"
-        android:label="@string/app_name"
+        android:label="Reminder"
         android:roundIcon="@drawable/ic_baseline_alarm_24"
         android:supportsRtl="true"
         android:theme="@style/Theme.AssignmentOne">

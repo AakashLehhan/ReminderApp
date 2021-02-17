@@ -1,65 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".SplashScreen"
     android:background="?attr/colorOnPrimary">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:gravity="left"
-        android:orientation="vertical"
-        android:layout_marginTop="50sp"
-        android:layout_marginLeft="25sp">
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:layout_marginTop="50sp"
+            android:layout_marginLeft="25sp">
 
-        <TextView
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:fontFamily="@font/nexa_bold"
+                android:id="@+id/name"
+                android:textSize="80sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/rNo"
+                android:fontFamily="@font/nexa_text_bold"
+                android:textSize="30sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/tag"
+                android:fontFamily="@font/sf_pro_thin"
+                android:textSize="30sp"/>
+
+        </LinearLayout>
+
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=""
-            android:fontFamily="@font/nexa_bold"
-            android:id="@+id/name"
-            android:textSize="80sp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:id="@+id/rNo"
-            android:fontFamily="@font/nexa_text_bold"
-            android:textSize="30sp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:id="@+id/tag"
-            android:fontFamily="@font/sf_pro_thin"
-            android:textSize="30sp"/>
-
-    </LinearLayout>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:id="@+id/appIcon"
-        android:src="@drawable/ic_baseline_alarm_24"
-        android:background="@drawable/icon_round_corners"
-        android:elevation="10sp"/>
+            android:layout_centerInParent="true"
+            android:id="@+id/appIcon"
+            android:src="@drawable/ic_baseline_alarm_24"
+            android:background="@drawable/icon_round_corners"
+            android:elevation="10sp"/>
+    </RelativeLayout>
 
     <ProgressBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="0"
         android:layout_alignParentBottom="true"
         style="?android:attr/progressBarStyleHorizontal"
         android:id="@+id/pBar"
         android:padding="25sp"
         android:indeterminate="false"
         android:max="80"
-        android:progress="0"/>
+        android:progress="0"
+        android:progressTint="?attr/colorSecondary"/>
 
-</RelativeLayout>
+</LinearLayout>
