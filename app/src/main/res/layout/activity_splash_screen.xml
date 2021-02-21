@@ -54,14 +54,24 @@
             android:id="@+id/appIcon"
             android:src="@drawable/ic_baseline_alarm_24"
             android:background="@drawable/icon_round_corners"
-            android:elevation="10sp"/>
+            android:elevation="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/app_name"
+            android:fontFamily="@font/nexa_bold"
+            android:textSize="15dp"
+            android:textColor="?attr/colorSecondary"/>
     </RelativeLayout>
+
 
     <ProgressBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0"
-        android:layout_alignParentBottom="true"
         style="?android:attr/progressBarStyleHorizontal"
         android:id="@+id/pBar"
         android:padding="25sp"

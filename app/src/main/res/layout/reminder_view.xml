@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/reminder_background"
+    android:layout_margin="40dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Add Reminder"
+        android:textSize="25dp"
+        android:textColor="?attr/colorSecondary"
+        android:fontFamily="@font/nexa_bold"
+        android:id="@+id/title"/>
+    <!-- <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        style="@style/CardView"
+        android:id="@+id/setDate"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/title"/> -->
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        android:id="@+id/setTime"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/title"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="0dp"
+        android:padding="10dp"
+        android:background="@drawable/alarm_info"
+        android:fontFamily="@font/sf_pro_thin"
+        android:hint="Reminder for"
+        android:maxLines="3"
+        android:textColor="@android:color/white"
+        android:id="@+id/remMsg"
+        android:inputType="textMultiLine"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/setTime"/>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/remMsg"
+        android:id="@+id/top">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Repeat after "
+            android:fontFamily="@font/sf_pro"
+            android:textSize="20dp"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:id="@+id/repAf"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="min"
+            android:fontFamily="@font/sf_pro_thin"
+            android:textSize="18dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/top">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:id="@+id/cancel_button"
+            android:fontFamily="@font/sf_pro"
+            android:textSize="20dp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"
+            android:id="@+id/set_reminder"
+            android:textColor="?attr/colorSecondary"
+            android:fontFamily="@font/sf_pro"
+            android:textSize="20dp"
+            android:gravity="center"/>
+    </LinearLayout>
+</RelativeLayout>
